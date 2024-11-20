@@ -92,7 +92,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        Integer remainder = math.mod(num, 2);
+        Integer remainder = Math.mod(num, 2);
         
         if(remainder!=0){
             return false;
