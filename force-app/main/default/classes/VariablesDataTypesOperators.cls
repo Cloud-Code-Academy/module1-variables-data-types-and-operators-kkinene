@@ -99,12 +99,13 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isEven(Integer num) {
         Integer remainder = math.mod(num, 2);
-        
+        /*
         if(remainder!=0){
             return false;
         }else{
             return true; // Replace null with the variable you used to store the result
-        }
+        }*/
+        return (remainder != 0) ? false : true;
     }
 
     /**
@@ -115,6 +116,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
+        if(num==0){
+            return ;
+        }
         if(num>0){
             return true; // Replace null with the variable you used to store the result
         }else {
