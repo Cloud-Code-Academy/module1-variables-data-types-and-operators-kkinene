@@ -176,7 +176,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isDateTodayOrFuture(Date dt) {
         Date todaysDate = Date.today();
-        if(dt<todaysDate){
+        if(dt < todaysDate) {
             return false;
         }else{
             return true; // Replace null with the variable you used to store the result
