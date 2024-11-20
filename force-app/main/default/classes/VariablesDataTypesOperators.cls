@@ -98,9 +98,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        Integer remainder = math.mod(num, 2);
-        /*
-        if(remainder!=0){
+        Integer remainder = Math.mod(num, 2);
+        
+       /* if(remainder!=0){
             return false;
         }else{
             return true; // Replace null with the variable you used to store the result
@@ -186,7 +186,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isDateTodayOrFuture(Date dt) {
         Date todaysDate = Date.today();
-        if(dt<todaysDate){
+        if(dt < todaysDate) {
             return false;
         }else{
             return true; // Replace null with the variable you used to store the result
@@ -219,7 +219,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The average of the three numbers.
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
-        return (a+b+c)/3; // Replace null with the variable you used to store the result
+        return (a + b + c )/ 3;  // Replace null with the variable you used to store the result
     }
 
     /**
