@@ -35,8 +35,8 @@ public with sharing class VariablesDataTypesOperators {
         if(a==null || b==null){
             return null;
         }
-        Integer answer = a+b; 
-        return answer; // Replace null with the variable you used to store the result
+        //Integer answer = a+b; 
+        return a+b; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -48,6 +48,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
+        if(a==null || b==null){
+            return null;
+        }
         return a-b; // Replace null with the variable you used to store the result
     }
 
@@ -60,7 +63,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        Integer result =a*b;
+        if(a==null || b==null){
+            return null;
+        }
+        Integer result =a * b;
         return result; // Replace null with the variable you used to store the result
     }
 
